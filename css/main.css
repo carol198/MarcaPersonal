@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/*fuentes*/
+/*colores*/
+a {
+  text-decoration: none; }
+
+/*header*/
+header:before, header:after {
+  content: "";
+  display: block;
+  clear: both; }
+header .menu li {
+  list-style: none;
+  float: left;
+  color: #858585;
+  display: inline-block; }
+header .menu a:hover {
+  color: #D4CCCC; }
+header .logo {
+  float: left; }
+  header .logo img {
+    width: 50px;
+    height: 50px;
+    float: left; }
+
+.logo {
+  float: left;
+  padding: 10px 30px 10px 30px; }
+
+/*HOME*/
+.ima {
+  background-image: url(../images/back-lock.jpg);
+  background-size: 100%;
+  height: 500px; }
+  .ima .texto {
+    position: relative;
+    padding: 60px 50px 60px 50px;
+    color: white;
+    text-align: center; }
+
+/*TEXTO INDIVIDUAL*/
+.fotos {
+  border: 2px solid red;
+  width: 48%;
+  height: 300px;
+  float: left; }
+
+.txt {
+  border: 2px solid green;
+  width: 48%;
+  height: 300px;
+  float: left; }
+
+.iconos {
+  border: 2px solid red;
+  width: 48%;
+  height: 150px;
+  float: left; }
+
+.icotxt {
+  border: 2px solid green;
+  width: 48%;
+  height: 150px;
+  float: left; }
+
+/*MY TITLE*/
+.ima2 {
+  background-image: url(../images/bg3.jpg);
+  background-size: 100%;
+  height: 500px;
+  margin-top: 900px; }
+  .ima2:before, .ima2:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .ima2 .texto2 {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    text-align: left;
+    width: 50%;
+    float: left; }
+  .ima2 .video {
+    float: left;
+    width: 45%; }
+    .ima2 .video p {
+      height: 200px;
+      border: 2px solid red; }
+
+/*ME DEFINE*/
+.rep:before, .rep:after {
+  content: "";
+  display: block;
+  clear: both; }
+.rep .marco {
+  margin: 20px 0px 20px 0px;
+  width: 20%;
+  float: left; }
+  .rep .marco img {
+    width: 90%;
+    height: 300px; }
+
+/*PLANES*/
+/*CONTACT*/
+
+/*# sourceMappingURL=main.css.map */
