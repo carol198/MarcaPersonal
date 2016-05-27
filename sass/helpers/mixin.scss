@@ -13,3 +13,13 @@
 		clear:both;
 	}
 }
+@mixin margenes{
+	margin-top:100px;
+	margin-bottom:100px;
+}
+@mixin raya{
+		background-color:$negro;
+		height:2px;
+		width:40px;
+		margin-left: 0px;
+}

@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>:::...MarcaPersonaSoloYo...:::</title>
+	<title>:::MarcaPersonal:::</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>	
 	<header>
-		<div  class="container-fluid">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="logo">
-						<img src="images/logo-gray.png" alt=""><h1>MARCA PERSONAL</h1>
-					</div>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <div class="logo">
+				<h4><img src="images/logo-gray.png" alt="">
+				Marca Personal</h4>
 				</div>
-				<div class="col-md-6">
-					<div>
-						<ul class="menu">
-							<li><a href="index.html" class="active">Home</a></li>
-							<li><a href="#">Texto Individual</a></li>
-							<li><a href="#">My Title</a></li>
-							<li><a href="#">Me define</a></li>
-							<li><a href="#">Planes</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Home</a></li>
+				<li><a href="#home"></a></li>
+				<li><a href="#texto">Texto Individual</a></li>
+				<li><a href="#title">My Title</a></li>
+				<li><a href="#define">Me define</a></li>
+				<li><a href="#planes">Planes</a></li>
+				<li><a href="#contact">Contact</a></li>
+		        <li class="dropdown">
+		          <ul class="dropdown-menu">
+		            <li><a href="#home">Home</a></li>
+		            <li><a href="#texto">Texto Individual</a></li>
+		            <li><a href="#title">My Title</a></li>
+		            <li><a href="#define">Me define</a></li>
+					<li><a href="#planes">Planes</a></li>
+					<li><a href="#contact">Contact</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 	</header>
 	<!--HOME-->
-	<section>
+	<section id="home">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -47,10 +66,10 @@
 		</div>
 	</section>
 <!--TEXTO INDIVIDUAL-->
-	<section>
+	<section id="texto">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="container">
+				<div class="container margen">
 					<div class="col-md-6">
 						<div class="fotos">
 							<div class="row">
@@ -64,6 +83,7 @@
 					<div class="col-md-6">
 						<div class="txt">
 							<h2>TEXTO INDIVIDUAL</h2>
+							<hr>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit magni sequi ad labore illo quam, iste cupiditate est laborum, deleniti iure eaque perspiciatis fugit eum.</p>
 							<div class="row">
 								<div class="col-md-4">
@@ -73,8 +93,8 @@
 								</div>
 								<div class="col-md-8">
 									<div class="icotxt">
-									<h3>TITULO INDIVIDUAL</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi eum dolorum odit, facere nulla beatae. Ea aspernatur possimus tenetur, corporis, veritatis illo sequi quisquam, aperiam at placeat, natus beatae?</p>
+									<h4>TITULO INDIVIDUAL</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi eum dolorum odit, facere nulla beatae.</p>
 									</div>
 								</div>
 							</div>
@@ -86,8 +106,8 @@
 								</div>
 								<div class="col-md-8">
 									<div class="icotxt">
-									<h3>TITULO INDIVIDUAL</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi eum dolorum odit, facere nulla beatae. Ea aspernatur possimus tenetur, corporis, veritatis illo sequi quisquam, aperiam at placeat, natus beatae?</p>
+									<h4>TITULO INDIVIDUAL</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi eum dolorum odit, facere nulla beatae.</p>
 									</div>
 								</div>
 							</div>
@@ -99,8 +119,8 @@
 								</div>
 								<div class="col-md-8">
 									<div class="icotxt">
-									<h3>TITULO INDIVIDUAL</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi eum dolorum odit, facere nulla beatae. Ea aspernatur possimus tenetur, corporis, veritatis illo sequi quisquam, aperiam at placeat, natus beatae?</p>
+									<h4>TITULO INDIVIDUAL</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi eum dolorum odit, facere nulla beatae.</p>
 									</div>
 								</div>
 							</div>
@@ -111,7 +131,7 @@
 		</div>
 	</section>
 <!--MY TITLE-->    
-	<section>
+	<section id="title">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -119,12 +139,13 @@
 			    		<div class="col-md-6">
 							<div class="texto2">
 							<h1>Welcome to my title</h1>
+							<hr>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quasi, sunt itaque repudiandae tenetur maiores, laborum sint animi rem autem laboriosam dolorem officiis sit vitae pariatur sed cumque eligendi facilis.</p>
 							</div>
 			    		</div>
 						<div class="col-md-6">
 							<div class="video">
-								<p>video.mp4</p>
+								<video src="images/video.mp4" preload loop controls></video>
 							</div>
 						</div>
 			        </div>
@@ -133,10 +154,13 @@
 		</div>
 	</section>
 <!--ME DEFINE-->	
-	<section>
-		<div class="container-fluid">
+	<section id="define">
+		<div class="container">
 			<div class="row rep">
 				<div class="col-md-12">
+					<h1>Algo que</h1>
+					 <h1>Me define</h1>
+					<hr>
 					<div class="col-md-3 marco">
 						<img src="images/member7.jpg" alt="">
 					</div>
@@ -144,7 +168,6 @@
 						<h1>NOMBRE Y APELLIDO</h1>
 						<h2>Cargo</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, odit, quas? Fuga autem enim provident architecto dolore blanditiis fugit eum commodi, obcaecati. Possimus placeat maiores ipsum velit sint harum cumque!</p>
-						<span>iconos</span>
 					</div>
 					<div class="col-md-3 marco">
 						<img src="images/member8.jpg" alt="">
@@ -178,28 +201,197 @@
 			</div>
 		</div>
 	</section>
-<!--PLANES-->
-	<section>
-	<div class="container-fluid">
+<!--PLANES our best offer-->
+	<section id="planes">
+	<div class="container margen">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="col-md-3">
-					
+				<h1>Our best offer</h1>
+				<hr>
+				<div class="col-md-3"><!--un cuadro-->
+					<div class="linea1">
+						<h2>Starter</h2>
+						<span>50/abrazos</span>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/man88.png" alt="">
+									<p>5 COMPAÑERAS</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/rectangles29.png" alt=""><p>15 PAGINAS</p>
+								</div>
+							</div>
+						</div>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/database22.png" alt="">
+									<p>BD DE CONOCIMIENTO</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/email162.png" alt="">
+									<p>150 EMAILS</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="order">
+									<p>ORDER NOW</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-3"></div>
-				<div class="col-md-3"></div>
-				<div class="col-md-3"></div>
+				<div class="col-md-3"><!--un cuadro-->
+					<div class="linea1">
+						<h2>Starter</h2>
+						<span>50/abrazos</span>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/man88.png" alt="">
+									<p>5 COMPAÑERAS</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/rectangles29.png" alt=""><p>15 PAGINAS</p>
+								</div>
+							</div>
+						</div>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/database22.png" alt="">
+									<p>BD DE CONOCIMIENTO</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/email162.png" alt="">
+									<p>150 EMAILS</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="order">
+									<p>ORDER NOW</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"><!--un cuadro-->
+					<div class="linea1">
+						<h2>Starter</h2>
+						<span>50/abrazos</span>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/man88.png" alt="">
+									<p>5 COMPAÑERAS</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/rectangles29.png" alt=""><p>15 PAGINAS</p>
+								</div>
+							</div>
+						</div>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/database22.png" alt="">
+									<p>BD DE CONOCIMIENTO</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/email162.png" alt="">
+									<p>150 EMAILS</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="order">
+									<p>ORDER NOW</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"><!--un cuadro-->
+					<div class="linea1">
+						<h2>Starter</h2>
+						<span>50/abrazos</span>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/man88.png" alt="">
+									<p>5 COMPAÑERAS</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/rectangles29.png" alt=""><p>15 PAGINAS</p>
+								</div>
+							</div>
+						</div>
+						<hr class="linea">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<img src="images/database22.png" alt="">
+									<p>BD DE CONOCIMIENTO</p>
+								</div>
+								<div class="col-md-6 borde">
+									<img src="images/email162.png" alt="">
+									<p>150 EMAILS</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="order">
+									<p>ORDER NOW</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	</section>
 <!--Contact-->	
-	<section>
+	<section id="contact">
+		<div class="container conta">
+			<div class="row">
+				<h2>Contact us</h2>
+				<hr>
+				<div class="col-md-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ea reiciendis eos quos laboriosam doloribus nisi dolorem.</p>
+					<form>
+					    <input type="email" placeholder="Name">
+					    <input type="password" placeholder="Email">
+					    <input type="email" placeholder="Subject">
+					    <textarea rows="5" placeholder="Message"></textarea>
+						 <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-4">
+					<div class="contact">
+						<h3>Contact Info</h3>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<footer>
-
 		
 	</footer>
-	<script src="js/jquery-min.js"></script>			
+	<script src="js/jquery-min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>			
 </body>
 </html>

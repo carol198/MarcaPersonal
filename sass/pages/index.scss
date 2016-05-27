@@ -1,88 +1,120 @@
 /*header*/
 header{
 	@include repisa;
-	.menu{
-	@include titulo;
-	a{
-		&:hover{
-			color:$gris;
+	.navbar-header{
+			.logo{
+			float:left;
+			img{
+				height:50px;
+				float:left;
 			}
 		}
 	}
-	.logo{
-		float:left;
-		img{
-		width:50px;
-		height:50px;
-		float:left;
-	}
-	}
+	
+	
 }
-.logo{
-	float:left;
-	padding:10px 30px 10px 30px;
-}
+
 /*HOME*/
 .ima{
 	background-image:url(../images/back-lock.jpg);
 	background-size:100%;
+	width:100%;
 	height:500px;
-	.texto{
-		position: relative;
-		padding:60px 50px 60px 50px;
-		color:$blanco;
-		text-align:center;
+	position: relative;
+	&:before{
+		background-color:rgba(0,0,0,0.5);
+		width:100%;
+		height:500px;
+		position: absolute;
 	}
+	.texto{
+		z-index: 0;
+		padding:60px 50px 60px 50px;
+		h1,p{
+			color:$blanco;
+			text-align:center;
+		}
+	}
+	@include repisa;
+	
 }
 /*TEXTO INDIVIDUAL*/
 
-.fotos{
-	border:2px solid red;
-	width:48%;
-	height:300px;
+.margen{
+	@include margenes;
+	.fotos{
+	@include repisa;
+	height:600px;
 	float:left;
+	img{
+		height:350px;
+		width:90%;
+	}
 }
 .txt{
-	border:2px solid green;
-	width:48%;
+	@include repisa;
 	height:300px;
 	float:left;
+	padding-top:100px;
+	hr{
+		@include raya;
+		background-color:$negro;
+	}
+	.iconos{
+		height:100px;
+		float:left;
+		width:100%;
+		img{
+			padding:10px 20px 10px 20px;
+			opacity: 0.5;
+		}
+	}
+	.icotxt{
+		height:120px;
+		float:left;
+		
+		h4,p{
+			padding:0px 20px 10px 20px;
+		}
+	}
 }
-.iconos{
-	border:2px solid red;
-	width:48%;
-	height:150px;
-	float:left;
 }
-.icotxt{
-	border:2px solid green;
-	width:48%;
-	height:150px;
-	float:left;
-}
+
+
 /*MY TITLE*/
 .ima2{
 	@include repisa;
 	background-image:url(../images/bg3.jpg);
 	background-size:100%;
 	height:500px;
-	margin-top:900px;
-	.texto2{
-		
-		padding:10px 20px 10px 20px;
-		color:$blanco;
-		text-align:left;
-		width:50%;
-		float:left;
+	position: relative;
+	@include margenes;
+	&:before{
+		background-color:rgba(0,0,0,0.5);
+		width:100%;
+		height:500px;
+		position: absolute;
 	}
-	.video{
-		float:left;
-		width:45%;
-		p{
-			
-			height:200px;
-			border:2px solid red;
+	.texto2{
+		padding:100px 20px 10px 0px;
+		hr{
+			margin-left: 30px;
+			@include raya;
+			background-color:$blanco;
 		}
+		h1,p{
+			padding:30px 20px 10px 20px;
+			color:$blanco;
+			text-align:left;
+		}
+		
+		float:left;
+		
+	}
+	video{
+		float:left;
+		width:90%;
+		padding:100px 20px 10px 20px;
 	}
 }
 
@@ -91,16 +123,105 @@ header{
 .rep{
 	@include repisa;
 		.marco{
-		margin:20px 0px 20px 0px;
-		width:20%;
-		float:left;
+			margin:0px 0px 0px 0px;
+			float:left;
+			h1,h2,p{
+				margin-left: 20px;
+				padding:5px 10px 20px 5px;
+				font-size: 12px;
+			}
+			img{	
+				height:300px;	
+				width:100%;
+				padding:0;
+					&:hover{
+						opacity: 0.5;
+					}
+				}
+			}
+			hr{
+				@include raya;
+				background-color:$negro;
+				}
+}
+/*PLANES*/
+.margen{
 		
+		.linea1{
+		width:100%;
+		background-color:$gris;
+		margin:0px;
+		padding:0px;
+		text-align:center;
+		h2{
+			font-weight: bold;
+			text-align:center;
+		}
+		span{
+			font-size: 30px;
+			font-weight: bold;
+			text-align:center;
+		}
+		.linea{
+			width:100%;
+			font-size: 1px;
+			background-color:$grisoscuro;
+		}
 		img{
-			width:90%;
-			height:300px;
+				opacity: 0.5;
+			}
+		.borde{
+				border-left:1px solid $grisoscuro;
+				padding:20px;
+				img{
+				opacity: 0.5;
+			}
+		}
+		p{
+			font-size: 10px;
+			font-weight: bold;
+			padding:9px;
 			
+		}
+		&:hover{
+					background-color:$blanco;
+					border:1px solid $negro;
+					
+				}
+
+		.order{
+		width:100%;
+		height:50px;
+		background-color:$negro;
+		color:$blanco;
+		margin-bottom: 0px;
+		
+		p{
+			padding:10px;
+			text-align:center;
+		}
+		}
+		hr{
+			@include raya;
+			background-color:$negro;
+			}
+	}
+}
+
+/*CONTACT*/
+.conta{
+	hr{
+		@include raya;
+		background-color:$negro;
+		input{
+			@include repisa;
 		}
 	}
 }
-/*PLANES*/
-/*CONTACT*/
+/*FOOTER*/
+footer{
+	@include repisa;
+	background-color:$grisoscuro;
+	height:200px;
+	width:100%;
+}

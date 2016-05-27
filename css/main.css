@@ -4,87 +4,123 @@
 a {
   text-decoration: none; }
 
+* {
+  font-family: Raleway; }
+
+hr {
+  width: 30px;
+  height: 30px; }
+
 /*header*/
 header:before, header:after {
   content: "";
   display: block;
   clear: both; }
-header .menu li {
-  list-style: none;
-  float: left;
-  color: #858585;
-  display: inline-block; }
-header .menu a:hover {
-  color: #D4CCCC; }
-header .logo {
+header .navbar-header .logo {
   float: left; }
-  header .logo img {
-    width: 50px;
+  header .navbar-header .logo img {
     height: 50px;
     float: left; }
-
-.logo {
-  float: left;
-  padding: 10px 30px 10px 30px; }
 
 /*HOME*/
 .ima {
   background-image: url(../images/back-lock.jpg);
   background-size: 100%;
-  height: 500px; }
+  width: 100%;
+  height: 500px;
+  position: relative; }
+  .ima:before {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 500px;
+    position: absolute; }
   .ima .texto {
-    position: relative;
-    padding: 60px 50px 60px 50px;
-    color: white;
-    text-align: center; }
+    z-index: 0;
+    padding: 60px 50px 60px 50px; }
+    .ima .texto h1, .ima .texto p {
+      color: white;
+      text-align: center; }
+  .ima:before, .ima:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 /*TEXTO INDIVIDUAL*/
-.fotos {
-  border: 2px solid red;
-  width: 48%;
-  height: 300px;
-  float: left; }
-
-.txt {
-  border: 2px solid green;
-  width: 48%;
-  height: 300px;
-  float: left; }
-
-.iconos {
-  border: 2px solid red;
-  width: 48%;
-  height: 150px;
-  float: left; }
-
-.icotxt {
-  border: 2px solid green;
-  width: 48%;
-  height: 150px;
-  float: left; }
+.margen {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .margen .fotos {
+    height: 600px;
+    float: left; }
+    .margen .fotos:before, .margen .fotos:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .margen .fotos img {
+      height: 350px;
+      width: 90%; }
+  .margen .txt {
+    height: 300px;
+    float: left;
+    padding-top: 100px; }
+    .margen .txt:before, .margen .txt:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .margen .txt hr {
+      background-color: black;
+      height: 2px;
+      width: 40px;
+      margin-left: 0px;
+      background-color: black; }
+    .margen .txt .iconos {
+      height: 100px;
+      float: left;
+      width: 100%; }
+      .margen .txt .iconos img {
+        padding: 10px 20px 10px 20px;
+        opacity: 0.5; }
+    .margen .txt .icotxt {
+      height: 120px;
+      float: left; }
+      .margen .txt .icotxt h4, .margen .txt .icotxt p {
+        padding: 0px 20px 10px 20px; }
 
 /*MY TITLE*/
 .ima2 {
   background-image: url(../images/bg3.jpg);
   background-size: 100%;
   height: 500px;
-  margin-top: 900px; }
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px; }
   .ima2:before, .ima2:after {
     content: "";
     display: block;
     clear: both; }
+  .ima2:before {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 500px;
+    position: absolute; }
   .ima2 .texto2 {
-    padding: 10px 20px 10px 20px;
-    color: white;
-    text-align: left;
-    width: 50%;
+    padding: 100px 20px 10px 0px;
     float: left; }
-  .ima2 .video {
+    .ima2 .texto2 hr {
+      margin-left: 30px;
+      background-color: black;
+      height: 2px;
+      width: 40px;
+      margin-left: 0px;
+      background-color: white; }
+    .ima2 .texto2 h1, .ima2 .texto2 p {
+      padding: 30px 20px 10px 20px;
+      color: white;
+      text-align: left; }
+  .ima2 video {
     float: left;
-    width: 45%; }
-    .ima2 .video p {
-      height: 200px;
-      border: 2px solid red; }
+    width: 90%;
+    padding: 100px 20px 10px 20px; }
 
 /*ME DEFINE*/
 .rep:before, .rep:after {
@@ -92,14 +128,93 @@ header .logo {
   display: block;
   clear: both; }
 .rep .marco {
-  margin: 20px 0px 20px 0px;
-  width: 20%;
+  margin: 0px 0px 0px 0px;
   float: left; }
+  .rep .marco h1, .rep .marco h2, .rep .marco p {
+    margin-left: 20px;
+    padding: 5px 10px 20px 5px;
+    font-size: 12px; }
   .rep .marco img {
-    width: 90%;
-    height: 300px; }
+    height: 300px;
+    width: 100%;
+    padding: 0; }
+    .rep .marco img:hover {
+      opacity: 0.5; }
+.rep hr {
+  background-color: black;
+  height: 2px;
+  width: 40px;
+  margin-left: 0px;
+  background-color: black; }
 
 /*PLANES*/
+.margen .linea1 {
+  width: 100%;
+  background-color: #D4CCCC;
+  margin: 0px;
+  padding: 0px;
+  text-align: center; }
+  .margen .linea1 h2 {
+    font-weight: bold;
+    text-align: center; }
+  .margen .linea1 span {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+  .margen .linea1 .linea {
+    width: 100%;
+    font-size: 1px;
+    background-color: #858585; }
+  .margen .linea1 img {
+    opacity: 0.5; }
+  .margen .linea1 .borde {
+    border-left: 1px solid #858585;
+    padding: 20px; }
+    .margen .linea1 .borde img {
+      opacity: 0.5; }
+  .margen .linea1 p {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 9px; }
+  .margen .linea1:hover {
+    background-color: white;
+    border: 1px solid black; }
+  .margen .linea1 .order {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px; }
+    .margen .linea1 .order p {
+      padding: 10px;
+      text-align: center; }
+  .margen .linea1 hr {
+    background-color: black;
+    height: 2px;
+    width: 40px;
+    margin-left: 0px;
+    background-color: black; }
+
 /*CONTACT*/
+.conta hr {
+  background-color: black;
+  height: 2px;
+  width: 40px;
+  margin-left: 0px;
+  background-color: black; }
+  .conta hr input:before, .conta hr input:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+/*FOOTER*/
+footer {
+  background-color: #858585;
+  height: 200px;
+  width: 100%; }
+  footer:before, footer:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 /*# sourceMappingURL=main.css.map */
