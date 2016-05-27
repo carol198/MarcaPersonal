@@ -29,21 +29,22 @@ header .navbar-header .logo {
   width: 100%;
   height: 500px;
   position: relative; }
-  .ima:before {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 500px;
-    position: absolute; }
-  .ima .texto {
-    z-index: 0;
-    padding: 60px 50px 60px 50px; }
-    .ima .texto h1, .ima .texto p {
-      color: white;
-      text-align: center; }
   .ima:before, .ima:after {
     content: "";
     display: block;
     clear: both; }
+  .ima:before {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 500px;
+    position: absolute; }
+  .ima .texto {
+    padding: 60px 50px 60px 50px;
+    font-size: 30px; }
+    .ima .texto h1, .ima .texto p {
+      color: white;
+      text-align: center;
+      position: relative; }
 
 /*TEXTO INDIVIDUAL*/
 .margen {
@@ -202,10 +203,11 @@ header .navbar-header .logo {
   width: 40px;
   margin-left: 0px;
   background-color: black; }
-  .conta hr input:before, .conta hr input:after {
-    content: "";
-    display: block;
-    clear: both; }
+
+.info i p {
+  visibility: false; }
+  .info i p:hover {
+    visibility: true; }
 
 /*FOOTER*/
 footer {
@@ -216,5 +218,8 @@ footer {
     content: "";
     display: block;
     clear: both; }
+  footer .box {
+    padding: 30px 20px 30px 20px;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
